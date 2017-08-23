@@ -1,0 +1,10 @@
+#!/bin/bash
+## This script shortens github links.
+
+echo -n 'URL: '
+
+read url
+
+curl -i https://git.io -F "url=$url"
+
+echo
